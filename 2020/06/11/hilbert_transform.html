@@ -123,9 +123,10 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#Now-we-are-ready-to-create-amplitude-modulated-signals,-and-subsequently,-estimate-the-envelope.">Now we are ready to create amplitude modulated signals, and subsequently, estimate the envelope. </a></li>
-<li class="toc-entry toc-h2"><a href="#Again,-we-see-that-filtered-envelope-is-a-better-estimate.-Now-let's-use-this-approach-to-obtain-an-envelope-of-speech-signal.">Again, we see that filtered envelope is a better estimate. Now let&#39;s use this approach to obtain an envelope of speech signal. </a></li>
-<li class="toc-entry toc-h2"><a href="#Before-we-complete-lets-see-how-good-is-our-filter.-We-will-apply-it-on-white-noise-and-see-the-resulting-spectrum-before-and-after-application.">Before we complete lets see how good is our filter. We will apply it on white noise and see the resulting spectrum before and after application. </a></li>
+<li class="toc-entry toc-h1"><a href="#Amplitude-modulated-tone">Amplitude modulated tone </a></li>
+<li class="toc-entry toc-h1"><a href="#Amplitude-modulated-harmonics">Amplitude modulated harmonics </a></li>
+<li class="toc-entry toc-h1"><a href="#Amplitude-modulated-white-noise">Amplitude modulated white noise </a></li>
+<li class="toc-entry toc-h1"><a href="#Speech-signal">Speech signal </a></li>
 <li class="toc-entry toc-h1"><a href="#That's-it!">That&#39;s it! </a></li>
 </ul><!--
 #################################################
@@ -223,10 +224,10 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Now-we-are-ready-to-create-amplitude-modulated-signals,-and-subsequently,-estimate-the-envelope.">
-<a class="anchor" href="#Now-we-are-ready-to-create-amplitude-modulated-signals,-and-subsequently,-estimate-the-envelope." aria-hidden="true"><span class="octicon octicon-link"></span></a>Now we are ready to create amplitude modulated signals, and subsequently, estimate the envelope.<a class="anchor-link" href="#Now-we-are-ready-to-create-amplitude-modulated-signals,-and-subsequently,-estimate-the-envelope."> </a>
-</h2>
-<p>Let's start with an amplitude modulated tone.</p>
+<h1 id="Amplitude-modulated-tone">
+<a class="anchor" href="#Amplitude-modulated-tone" aria-hidden="true"><span class="octicon octicon-link"></span></a>Amplitude modulated tone<a class="anchor-link" href="#Amplitude-modulated-tone"> </a>
+</h1>
+<p>Let's start with an amplitude modulated tone and estimate the envelope.</p>
 
 </div>
 </div>
@@ -302,6 +303,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Amplitude-modulated-harmonics">
+<a class="anchor" href="#Amplitude-modulated-harmonics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Amplitude modulated harmonics<a class="anchor-link" href="#Amplitude-modulated-harmonics"> </a>
+</h1>
 <p>Let's make the carrier a sum of 2 harmonics. The carrier is not a tone but a sum of two tones.</p>
 
 </div>
@@ -474,6 +478,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Amplitude-modulated-white-noise">
+<a class="anchor" href="#Amplitude-modulated-white-noise" aria-hidden="true"><span class="octicon octicon-link"></span></a>Amplitude modulated white noise<a class="anchor-link" href="#Amplitude-modulated-white-noise"> </a>
+</h1>
 <p>We do better with filter but still not perfect. Now, lets make the carrier a broadband white noise instead of tones.</p>
 
 </div>
@@ -570,9 +577,11 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Again,-we-see-that-filtered-envelope-is-a-better-estimate.-Now-let's-use-this-approach-to-obtain-an-envelope-of-speech-signal.">
-<a class="anchor" href="#Again,-we-see-that-filtered-envelope-is-a-better-estimate.-Now-let's-use-this-approach-to-obtain-an-envelope-of-speech-signal." aria-hidden="true"><span class="octicon octicon-link"></span></a>Again, we see that filtered envelope is a better estimate. Now let's use this approach to obtain an envelope of speech signal.<a class="anchor-link" href="#Again,-we-see-that-filtered-envelope-is-a-better-estimate.-Now-let's-use-this-approach-to-obtain-an-envelope-of-speech-signal."> </a>
-</h2>
+
+<pre><code>Again, we see that filtered envelope is a better estimate. Now let's use this approach to obtain an envelope of speech signal.</code></pre>
+<h1 id="Speech-signal">
+<a class="anchor" href="#Speech-signal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Speech signal<a class="anchor-link" href="#Speech-signal"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -662,9 +671,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Before-we-complete-lets-see-how-good-is-our-filter.-We-will-apply-it-on-white-noise-and-see-the-resulting-spectrum-before-and-after-application.">
-<a class="anchor" href="#Before-we-complete-lets-see-how-good-is-our-filter.-We-will-apply-it-on-white-noise-and-see-the-resulting-spectrum-before-and-after-application." aria-hidden="true"><span class="octicon octicon-link"></span></a>Before we complete lets see how good is our filter. We will apply it on white noise and see the resulting spectrum before and after application.<a class="anchor-link" href="#Before-we-complete-lets-see-how-good-is-our-filter.-We-will-apply-it-on-white-noise-and-see-the-resulting-spectrum-before-and-after-application."> </a>
-</h2>
+<p>Before we sum-up complete lets see how good is our filter. We will apply it on white noise and see the resulting spectrum before and after application.</p>
+
 </div>
 </div>
 </div>
@@ -703,7 +711,6 @@ window.onload = wrap_img;
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'upper right'</span><span class="p">,</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
-
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
