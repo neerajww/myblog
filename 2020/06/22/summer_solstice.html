@@ -123,6 +123,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#About">About </a></li>
 <li class="toc-entry toc-h1"><a href="#Lets-start-with-the-code">Lets start with the code </a></li>
 <li class="toc-entry toc-h1"><a href="#Visualization">Visualization </a>
 <ul>
@@ -152,29 +153,32 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I had forgotten the longest day fact. But now since 2017, around 21st June, I always notice in social media some news about it. Now to top up the excitement, I have my nephew who shares the birthday with summer solstice, and also two wonderful friends whose birthdays are one day before and one day after this day.</p>
-<p>This time I read an exciting story shared by <a href="https://www.ias.ac.in/article/fulltext/reso/020/03/0254-0259">Vishu Guttal</a> here. He describes his visit to a school and an excercise he did there on verifying this fact. I was amazed on reading it, and thought to do the excercise myself. This post is about it.</p>
-<p>Astronomy is amazing. You can make theory, prediction, observations, and verification - but all this without ever getting close to the entity you are studying. This science has amazed humanity since centuries. Does earth go around the Sun? Is the orbit elliptical? Are there many galaxies? Is the universe expanding? Did all this start with a big bang? Theories have been made, disapproved, and updated.
-Let's take a small ride into this field as we sit beside a computer and type few lines of codes, and verify - the "longest day" claim.</p>
-<p>First we will list some known facts.</p>
+<h1 id="About">
+<a class="anchor" href="#About" aria-hidden="true"><span class="octicon octicon-link"></span></a>About<a class="anchor-link" href="#About"> </a>
+</h1>
+<p>I had forgotten the longest day fact. But now since 2017, around 21st June, I always notice in social media some news about it. Now, to further strengthen my excitement, I have my nephew who shares the birthday with summer solstice, and also two wonderful friends whose birthdays are one day before and one day after this day.</p>
+<p>This time I read an exciting story shared by <a href="https://www.ias.ac.in/article/fulltext/reso/020/03/0254-0259">Vishu Guttal</a> here. He describes his visit to a school and an excercise he did there on verifying the "longest day" fact. I was amazed on reading it, and thought to do the excercise myself. This post is about it.</p>
+<p>Astronomy is amazing. You can make theory, prediction, observations, and verification - but all this without ever getting close to the entity you are studying. This science has amazed humanity since centuries. Does earth go around the Sun? Is the orbit elliptical? Are there many galaxies? Is the universe expanding? Did all this start with a big bang? Theories have been made, disapproved, and updated.</p>
+<p>Let's take a very small ride into this field as we sit (or stand, whatever you are doing) and verify - the "longest day" fact by crunching some numbers and plotting the data.</p>
+<p>First let's list other some known facts.</p>
 <ul>
 <li>Earth goes around Sun</li>
 <li>This path is elliptic</li>
 <li>Earth is tilted about its axis</li>
 </ul>
-<p>It is not easy to prove these three bullets. Spare a moment, and imagine staring at the sky, and verifying the above statements. It is not easy, and you will thank some amzing folks who did this. Further, as a result of these three bullets, we experience on Earth:</p>
+<p>It is not easy to verify these three bullets. Spare a moment, and imagine staring at the sky, and verifying the above statements. It is not easy, and you will thank some amazing folks who did this. Further, as a result of these three bullets, we experience on Earth:</p>
 <ul>
 <li>seasons</li>
 <li>a longest day and a shortest day</li>
 </ul>
-<p>Thinking naively, season should be determined by length of the day. A longer day will imply more heat incident on the Earth surface, indicating a day in summer. The below figure from <a href="https://en.wikipedia.org/wiki/Season">Wikipedia</a> helps understanding this. The interesting thing to note is that summer is not when earth is closest to the Sun. This is because of the tilt of the Earth. Owing to this tilt we have a day of the year on which the northern hemisphere is exposed to the Sun for maximum time, while the Earth rotates around its own axis. This day is called summer solstice. Similarly, we have a day of winter solstice - shortest day.
-So why did the Earth tilt? Long long time back something came flying by and hit Earth, and since then, our Earth got tilted. To read more <a href="https://spaceplace.nasa.gov/seasons/en/#:~:text=The%20Short%20Answer%3A,winter%20in%20the%20Northern%20Hemisphere.">click here</a>. The nice thing is thus, we have seasons!</p>
+<p>Thinking naively, season should be determined by length of the day. A longer day will imply more heat incident on the Earth surface, indicating a day in summer. The below figure from <a href="https://en.wikipedia.org/wiki/Season">Wikipedia</a> helps understanding this. The interesting thing to note is that summer is not when earth is closest to the Sun. This is because of the tilt of the Earth. Owing to this tilt we have a day of the year on which the northern hemisphere is exposed to the Sun for maximum time, while the Earth rotates around its own axis. This day is called summer solstice. Similarly, we have a day of winter solstice - shortest day.</p>
+<p>So why did the Earth tilt? One theory states - Long long time ago something came flying by and hit Earth, and since then, our Earth got tilted! To read more <a href="https://spaceplace.nasa.gov/seasons/en/#:~:text=The%20Short%20Answer%3A,winter%20in%20the%20Northern%20Hemisphere.">click here</a>. The nice thing is thus, we have seasons!</p>
 <p><img src="/myblog/images/copied_from_nb/my_images/seasons.png" alt="Source Wikipedia"></p>
 <p>In the code below we will do a small excercise to verify that there exists a longest day. We will do this for just one year, 2019. The samething can be done for any year if your are in doubt. The idea is simple.</p>
 <ul>
-<li>Using python we will write few lines of codes and make some plots</li>
+<li>Using python we will write few lines of codes</li>
 <li>The code will use a package "astral" to find the sunrise/sunset times for any latitude (and longitude) on Earth.</li>
-<li>We will follow this up with some visualization</li>
+<li>We will visualize this data</li>
 </ul>
 
 </div>
@@ -461,7 +465,7 @@ So why did the Earth tilt? Long long time back something came flying by and hit 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You can see that there is a nice peak around 21st June for the day length data plotted for the 212 cities. For the majority of the cities this happens to be exactly 21st June. Here, Dibrugarh is the eastern most city in our database, and Porbander is the westtern most. The intersting is also the variation in the trace of day length across the cities. Also, note that there are two days of the year on which day length is excatly 12 hrs! These dates correspond to the equinox.</p>
+<p>You can see that there is a nice peak around 21st June for the day length data. This peak is there in traces for all the 212 cities, and the patterns is similar. For the majority of the cities this happens to be exactly 21st June. Here, Dibrugarh is the eastern most city in our database, and Porbander is the westtern most. The intersting is also the variation in the trace of day length across the cities. Also, note that there are two days of the year on which day length is excatly 12 hrs! These dates correspond to the equinox.</p>
 <h3 id="Next,-lets-visualize-the-sunrise-times.-The-code-is-given-below.">
 <a class="anchor" href="#Next,-lets-visualize-the-sunrise-times.-The-code-is-given-below." aria-hidden="true"><span class="octicon octicon-link"></span></a>Next, lets visualize the sunrise times. The code is given below.<a class="anchor-link" href="#Next,-lets-visualize-the-sunrise-times.-The-code-is-given-below."> </a>
 </h3>
