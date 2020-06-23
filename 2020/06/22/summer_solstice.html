@@ -124,11 +124,11 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h1"><a href="#About">About </a></li>
-<li class="toc-entry toc-h1"><a href="#Lets-start-with-the-code">Lets start with the code </a></li>
-<li class="toc-entry toc-h1"><a href="#Visualization">Visualization </a>
+<li class="toc-entry toc-h1"><a href="#Let's-code-this">Let&#39;s code this </a></li>
+<li class="toc-entry toc-h1"><a href="#Done.-Now-let's-visualize">Done. Now let&#39;s visualize </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#First-lets-visualize-the-daylength,-difference-between-sunset-and-sunrise-times.">First lets visualize the daylength, difference between sunset and sunrise times. </a></li>
-<li class="toc-entry toc-h3"><a href="#Next,-lets-visualize-the-sunrise-times.-The-code-is-given-below.">Next, lets visualize the sunrise times. The code is given below. </a></li>
+<li class="toc-entry toc-h3"><a href="#First-lets-visualize-the-day-length,-that-is-the-difference-between-sunset-and-sunrise-times,-for-all-the-365-days.">First lets visualize the day length, that is the difference between sunset and sunrise times, for all the 365 days. </a></li>
+<li class="toc-entry toc-h3"><a href="#Next,-lets-visualize-the-sunrise-times-for-all-365-days.-The-code-is-given-below.">Next, lets visualize the sunrise times for all 365 days. The code is given below. </a></li>
 <li class="toc-entry toc-h3"><a href="#Next,-lets-visualiza-the-sunset-times.-The-code-snippet-is-given-below.">Next, lets visualiza the sunset times. The code snippet is given below. </a></li>
 <li class="toc-entry toc-h3"><a href="#Next,-lets-plot-the-time-of-noon,-or-the-time-when-the-sun-is-at-its-highest-point-directly-above-the-observer.-Below-is-the-code-snippet-to-plot-it.">Next, lets plot the time of noon, or the time when the sun is at its highest point directly above the observer. Below is the code snippet to plot it. </a></li>
 </ul>
@@ -174,12 +174,13 @@ window.onload = wrap_img;
 <p>Thinking naively, season should be determined by length of the day. A longer day will imply more heat incident on the Earth surface, indicating a day in summer. The below figure from <a href="https://en.wikipedia.org/wiki/Season">Wikipedia</a> helps understanding this. The interesting thing to note is that summer is not when earth is closest to the Sun. This is because of the tilt of the Earth. Owing to this tilt we have a day of the year on which the northern hemisphere is exposed to the Sun for maximum time, while the Earth rotates around its own axis. This day is called summer solstice. Similarly, we have a day of winter solstice - shortest day.</p>
 <p>So why did the Earth tilt? One theory states - Long long time ago something came flying by and hit Earth, and since then, our Earth got tilted! To read more <a href="https://spaceplace.nasa.gov/seasons/en/#:~:text=The%20Short%20Answer%3A,winter%20in%20the%20Northern%20Hemisphere.">click here</a>. The nice thing is thus, we have seasons!</p>
 <p><img src="/myblog/images/copied_from_nb/my_images/seasons.png" alt="Source Wikipedia"></p>
-<p>In the code below we will do a small excercise to verify that there exists a longest day. We will do this for just one year, 2019. The samething can be done for any year if your are in doubt. The idea is simple.</p>
+<p>In the code below we will do a small excercise to verify that there exists a longest day. We will do this for just one year, 2019. The same thing can be done for any year if your are in doubt. The idea is simple.</p>
 <ul>
 <li>Using python we will write few lines of codes</li>
 <li>The code will use a package "astral" to find the sunrise/sunset times for any latitude (and longitude) on Earth.</li>
 <li>We will visualize this data</li>
 </ul>
+<p>Fingures crossed, lets jump in</p>
 
 </div>
 </div>
@@ -187,8 +188,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Lets-start-with-the-code">
-<a class="anchor" href="#Lets-start-with-the-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lets start with the code<a class="anchor-link" href="#Lets-start-with-the-code"> </a>
+<h1 id="Let's-code-this">
+<a class="anchor" href="#Let's-code-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>Let's code this<a class="anchor-link" href="#Let's-code-this"> </a>
 </h1>
 </div>
 </div>
@@ -382,11 +383,11 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Visualization">
-<a class="anchor" href="#Visualization" aria-hidden="true"><span class="octicon octicon-link"></span></a>Visualization<a class="anchor-link" href="#Visualization"> </a>
+<h1 id="Done.-Now-let's-visualize">
+<a class="anchor" href="#Done.-Now-let's-visualize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Done. Now let's visualize<a class="anchor-link" href="#Done.-Now-let's-visualize"> </a>
 </h1>
-<h3 id="First-lets-visualize-the-daylength,-difference-between-sunset-and-sunrise-times.">
-<a class="anchor" href="#First-lets-visualize-the-daylength,-difference-between-sunset-and-sunrise-times." aria-hidden="true"><span class="octicon octicon-link"></span></a>First lets visualize the daylength, difference between sunset and sunrise times.<a class="anchor-link" href="#First-lets-visualize-the-daylength,-difference-between-sunset-and-sunrise-times."> </a>
+<h3 id="First-lets-visualize-the-day-length,-that-is-the-difference-between-sunset-and-sunrise-times,-for-all-the-365-days.">
+<a class="anchor" href="#First-lets-visualize-the-day-length,-that-is-the-difference-between-sunset-and-sunrise-times,-for-all-the-365-days." aria-hidden="true"><span class="octicon octicon-link"></span></a>First lets visualize the day length, that is the difference between sunset and sunrise times, for all the 365 days.<a class="anchor-link" href="#First-lets-visualize-the-day-length,-that-is-the-difference-between-sunset-and-sunrise-times,-for-all-the-365-days."> </a>
 </h3>
 </div>
 </div>
@@ -466,8 +467,8 @@ window.onload = wrap_img;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can see that there is a nice peak around 21st June for the day length data. This peak is there in traces for all the 212 cities, and the patterns is similar. For the majority of the cities this happens to be exactly 21st June. Here, Dibrugarh is the eastern most city in our database, and Porbander is the westtern most. The intersting is also the variation in the trace of day length across the cities. Also, note that there are two days of the year on which day length is excatly 12 hrs! These dates correspond to the equinox.</p>
-<h3 id="Next,-lets-visualize-the-sunrise-times.-The-code-is-given-below.">
-<a class="anchor" href="#Next,-lets-visualize-the-sunrise-times.-The-code-is-given-below." aria-hidden="true"><span class="octicon octicon-link"></span></a>Next, lets visualize the sunrise times. The code is given below.<a class="anchor-link" href="#Next,-lets-visualize-the-sunrise-times.-The-code-is-given-below."> </a>
+<h3 id="Next,-lets-visualize-the-sunrise-times-for-all-365-days.-The-code-is-given-below.">
+<a class="anchor" href="#Next,-lets-visualize-the-sunrise-times-for-all-365-days.-The-code-is-given-below." aria-hidden="true"><span class="octicon octicon-link"></span></a>Next, lets visualize the sunrise times for all 365 days. The code is given below.<a class="anchor-link" href="#Next,-lets-visualize-the-sunrise-times-for-all-365-days.-The-code-is-given-below."> </a>
 </h3>
 </div>
 </div>
